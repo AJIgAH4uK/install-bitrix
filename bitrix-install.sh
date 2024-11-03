@@ -113,9 +113,9 @@ if [ $command = 'install' ] ; then
             s|;date.timezone =|date.timezone = Asia/Vladivostok|
             s|;opcache.revalidate_freq=2|opcache.revalidate_freq=0|
             s|;opcache.max_accelerated_files=10000|opcache.max_accelerated_files=100000|
-        ' /etc/php/7.4/fpm/php.ini
+        ' /etc/php/8.1/fpm/php.ini
 
-        systemctl restart php7.4-fpm
+        systemctl restart php8.1-fpm
 
         echo -e " - \e[32mdone\e[39m"
     fi
